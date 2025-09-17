@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-webchannel"
+version = "0.1.0"
+description = "Python implementation of the Firebase WebChannel protocol"
+readme = "README.md"
+authors = [{name = "Hurozo", email = "admin@hurozo.com"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+dependencies = [
+  "httpx>=0.27",
+  "anyio>=3.7"
+]
+
+[project.urls]
+Homepage = "https://hurozo.com"
+Repository = "https://github.com/hurozo/python-webchannel"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
