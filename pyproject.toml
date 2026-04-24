@@ -15,6 +15,11 @@ dependencies = [
   "anyio>=3.7"
 ]
 
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0"
+]
+
 [project.urls]
 Homepage = "https://hurozo.com"
 Repository = "https://github.com/hurozo/python-webchannel"
